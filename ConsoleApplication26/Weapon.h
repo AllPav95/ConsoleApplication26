@@ -6,9 +6,9 @@ class Weapon {
 public:
     Weapon(const std::string& type, int damage, double weight);
 
-    std::string getType() const;
-    int getDamage() const;
-    double getWeight() const;
+    virtual std::string getType() const;
+    virtual int getDamage() const;
+    virtual double getWeight() const;
 
 private:
     std::string type_;
