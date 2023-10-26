@@ -45,4 +45,12 @@ double Material::getQuality() const
 {
 	return quality_;
 }
+double Material::getSoftness() const
+{
+	return softness_;
+}
+double Material::getState() const
+{
+	return state_;
+}
 #include "pch.h"

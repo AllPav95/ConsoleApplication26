@@ -22,8 +22,8 @@ int main() {
     std::vector<MaterialBase*> materials;
     materials.push_back(new Steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0));
     materials.push_back(new Metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0));
-    materials.push_back(new Leather("Leather", "Brown", 2.0, 1.0, 3.0));
-    materials.push_back(new Wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0));
+    materials.push_back(new Leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0));
+    materials.push_back(new Wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100));
 
     std::vector<Weapon> weapons;
     weapons.push_back(Weapon("AK-47", 30, 4.5));

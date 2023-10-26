@@ -4,7 +4,7 @@ Steel::Steel()
     : MaterialBase("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0) {
 }
 
-Steel::Steel(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity)
+Steel::Steel(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density)
     : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density) {
 }
 

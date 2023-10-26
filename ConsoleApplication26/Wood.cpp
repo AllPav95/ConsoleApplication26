@@ -1,11 +1,11 @@
 #include "Wood.h"
 
 Wood::Wood()
-    : MaterialBase("Wood", "Brown", 1.0, 0.6, 0.7, 10.0) {
+    : MaterialBase("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100) {
 }
 
-Wood::Wood(const std::string& type, const std::string& color, double hardness, double weight, double density, double moistureContent)
-    :MaterialBase(type, color, hardness, weight, moistureContent) {}
+Wood::Wood(const std::string& type, const std::string& color, double hardness, double weight, double density, double moistureContent, double state)
+    :MaterialBase(type, color, hardness, weight, density, moistureContent, state) {}
 
 
 std::string Wood::getType() const
@@ -28,4 +28,11 @@ double Wood::getDensity() const {
 double Wood::getMoistureContent() const {
     return moistureContent_;
 }
+
+double Wood::getState() const
+{
+    return state_;
+}
+
+
 #include "pch.h"

@@ -6,8 +6,8 @@ Leather::Leather()
     : MaterialBase("Leather", "Brown", 2.0, 1.0, 3.0) {
 }
 
-Leather::Leather(const std::string& type, const std::string& color, double hardness, double weight, double quality)
-    : MaterialBase(type, color, hardness, weight, quality) {
+Leather::Leather(const std::string& type, const std::string& color, double hardness, double weight, double quality, double softness, double moistureContent)
+    : MaterialBase(type, color, hardness, weight, quality, softness, moistureContent) {
 }
 
 std::string Leather::getType() const
@@ -31,6 +31,16 @@ double Leather::getWeight() const {
 
 double Leather::getQuality() const {
     return quality_;
+}
+
+double Leather::getSoftness() const
+{
+    return softness_;
+}
+
+double Leather::getMoistureContent() const
+{
+    return moistureContent_;
 }
 
 #include "pch.h"
