@@ -1,13 +1,13 @@
 #include "Steel.h"
 
-
 Steel::Steel()
-    : MaterialBase("Steel", "Gray", 25.0, 38.0, 440.0, 52.0, 88.0) {
+    : MaterialBase("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0) {
 }
 
 Steel::Steel(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity)
-    : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity) {
+    : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density) {
 }
+
 
 std::string Steel::getType() const
 {
@@ -34,3 +34,8 @@ double Steel::getMeltingPoint() const {
 double Steel::getConductivity() const {
     return conductivity_;
 }
+double Steel::getDensity() const
+{
+    return density_;
+}
+#include "pch.h"

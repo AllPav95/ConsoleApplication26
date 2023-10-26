@@ -1,8 +1,7 @@
 #include "Wood.h"
 
-
 Wood::Wood()
-    : MaterialBase("Wood", "Brown", 55.0, 120.0, 40.0) {
+    : MaterialBase("Wood", "Brown", 1.0, 0.6, 0.7, 10.0) {
 }
 
 Wood::Wood(const std::string& type, const std::string& color, double hardness, double weight, double density, double moistureContent)
@@ -29,3 +28,4 @@ double Wood::getDensity() const {
 double Wood::getMoistureContent() const {
     return moistureContent_;
 }
+#include "pch.h"

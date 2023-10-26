@@ -16,3 +16,4 @@ int Weapon::getDamage() const {
 double Weapon::getWeight() const {
     return weight_;
 }
+#include "pch.h"

@@ -2,12 +2,6 @@
 #include "MaterialBase.h"
 
 class Leather final: public MaterialBase {
-private:
-    std::string type_;
-    std::string color_;
-    double hardness_;
-    double weight_;
-    double quality_;
 
 public:
     Leather();
@@ -20,5 +14,11 @@ public:
     double getHardness() const;
     double getWeight() const;
     double getQuality() const;
+private:
+    std::string type_;
+    std::string color_;
+    double hardness_;
+    double weight_;
+    double quality_;
     
 };

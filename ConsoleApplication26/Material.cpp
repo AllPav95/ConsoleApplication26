@@ -1,4 +1,3 @@
-#include "MaterialBase.h"
 #include "Material.h"
 
 
@@ -46,3 +45,4 @@ double Material::getQuality() const
 {
 	return quality_;
 }
+#include "pch.h"
