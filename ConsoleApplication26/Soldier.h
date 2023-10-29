@@ -14,13 +14,11 @@ public:
     void walk() override {
         std::cout << "Soldier " << name << " is walking." << std::endl;
     }
+    Soldier() = default;
 
 private:
     std::string name;
     int age;
     std::string rank;
     Weapon weapon_;
-public:
-
-    Soldier() = default;
-};
+ };   

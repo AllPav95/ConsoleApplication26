@@ -16,4 +16,3 @@ void Soldier::report() const {
 void Soldier::walk() {
     std::cout << "Soldier " << name << " is walking." << std::endl;
 }
-#include "pch.h"

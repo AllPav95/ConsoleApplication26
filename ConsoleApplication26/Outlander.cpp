@@ -9,7 +9,6 @@
 #include "Weapon.h"
 #include "Soldier.h"
 #include "Horses.h"
-
 #include <vector>
 #include "../StaticLib1/StaticLib1.cpp"
 #include "../StaticLib2/StaticLib2.cpp"
@@ -19,24 +18,29 @@
 #include "SoldierActions.h"
 
 int main() {
+    Material steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0);
+    Material metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0);
+    Material leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0);
+    Material wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100.0);
+    
     std::vector<MaterialBase*> materials;
-    materials.push_back(new Steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0));
-    materials.push_back(new Metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0));
-    materials.push_back(new Leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0));
-    materials.push_back(new Wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100));
-
+    std::vector<MaterialBase*> materials;
+    materials.push_back(&steel);
+    materials.push_back(&metal);
+    materials.push_back(&leather);
+    materials.push_back(&wood);
+   
+    fnStaticLib1(materials);
+    
     std::vector<Weapon> weapons;
     weapons.push_back(Weapon("AK-47", 30, 4.5));
     weapons.push_back(Weapon("M16", 20, 4.0));
 
-   
-    for (MaterialBase* material : materials) {
-        fnStaticLib1(material);
-    }
-    for (const Weapon& weapon : weapons) {
-        fnStaticLib2(weapon);
-    }
-    fnStaticLib3("AmmunitionType", 100, 25.5, weapons[0]);
+    fnStaticLib2(weapons);
+
+    std::vector<Ammunition> ammunition;
+    
+    fnStaticLib3(ammunition, weapons);
 
     std::vector<Soldier> soldiers;
     soldiers.push_back(Soldier("Johnson", 25, "Private", weapons[0]));
@@ -49,7 +53,7 @@ int main() {
     SoldierActions* soldierPtr = &soldier;
     soldierPtr->walk();
 
-    fnStaticLib4("John", 35, "Captain", soldiers[0], weapons[0]);
+    fnStaticLib4("John", 35, "Captain", soldiers[0]);
     fnStaticLib5("HorseName", 5, "Breed", 600.0, Horse("HorseName", 5, "Breed", 600.0));
 
     for (MaterialBase* material : materials) {

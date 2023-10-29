@@ -3,9 +3,15 @@
 
 class Wood : public MaterialBase {
 public:
-    Wood();
-    Wood(const std::string& type, const std::string& color, double hardness, double weight, double density, double moistureContent, double state)
-        : MaterialBase(type, color, hardness, weight, density, moistureContent, state) {}
+    Wood(
+        const std::string& type = "Wood",
+        const std::string& color = "Brown",
+        double hardness = 1.0,
+        double weight = 0.6,
+        double density = 0.7,
+        double moistureContent = 10.0,
+        double state = 100.0
+    );
 
     std::string getType() const;
     std::string getColor() const;

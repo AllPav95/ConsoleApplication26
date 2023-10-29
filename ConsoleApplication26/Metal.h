@@ -4,10 +4,16 @@
 
 class Metal : public MaterialBase {
 public:
-    Metal();
-    Metal(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density)
-    : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density) {} 
-    
+    Metal(
+        const std::string& type = "Metal",
+        const std::string& color = "Gray",
+        double hardness = 60.0,
+        double weight = 2.7,
+        double meltingPoint = 660.0,
+        double conductivity = 62.0,
+        double density = 7.0
+    );
+
     std::string getType() const;
     std::string getColor() const;
 

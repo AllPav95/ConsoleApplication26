@@ -1,34 +1,24 @@
 #pragma once
 #include <string>
 
-
 class MaterialBase {
 public:
-    virtual void initializeMaterial(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density, double moistureContent, double quality){
-        type_ = type;
-        color_ = color;
-        hardness_ = hardness;
-        weight_ = weight;
-        meltingPoint_ = meltingPoint;
-        conductivity_ = conductivity;
-        density_ = density;
-        moistureContent_ = moistureContent;
-        quality_ = quality;
-
- }   
-    virtual const char* getInfoAsString() const;
-    virtual std::string getType() const;
-    virtual std::string getColor() const;
-    virtual double getHardness() const;
-    virtual double getWeight() const;
-    virtual double getMeltingPoint() const;
-    virtual double getConductivity() const;
-    virtual double getDensity() const;
-    virtual double getMoistureContent() const;
-    virtual double getQuality() const;
-    virtual void setType(const std::string& type);
-    virtual void setHardness(double hardness);
-    virtual void setWeight(double weight);
+    MaterialBase(const std::string& type = "Unknown", const std::string& color = "Unknown", double hardness = 0.0, double weight = 0.0, double meltingPoint = -1.0, double conductivity = 0.0, double density = 0.0, double softness = 0.0, double state = 0.0);
+   
+    std::string getType() const;
+    std::string getColor() const;
+    double getHardness() const;
+    double getWeight() const;
+    double getMeltingPoint() const;
+    double getConductivity() const;
+    double getDensity() const;
+    double getMoistureContent() const;
+    double getQuality() const;
+    double getSoftness() const;
+    double getState() const;
+    void setType(const std::string& type);
+    void setHardness(double hardness);
+    void setWeight(double weight);
 private:
     std::string type_;
     std::string color_;
@@ -39,8 +29,6 @@ private:
     double density_;
     double moistureContent_;
     double quality_;
+    double softness_;
+    double state_;
 };
-
-/* MaterialBase(const std::string & type, const std::string & color, double hardness, double weight, double meltingPoint, double conductivity, double density);
-    MaterialBase(const std::string& type, const std::string& color, double hardness, double weight, double quality);
-    MaterialBase(const std::string& type, const std::string& color, double hardness, double weight, double moistureContent);*/

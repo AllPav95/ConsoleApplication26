@@ -1,5 +1,19 @@
-#include "Material.h"
+#include "Metal.h"
 
+Material::Material(
+	const std::string& type,
+	const std::string& color,
+	double hardness,
+	double weight,
+	double meltingPoint,
+	double conductivity,
+	double density,
+	double softness,
+	double state
+) : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density) {
+	softness_ = softness;
+	state_ = state;
+}
 
 std::string Material::getType() const
 {
@@ -10,6 +24,7 @@ std::string Material::getColor() const
 {
 	return color_;
 }
+
 
 double Material::getHardness() const
 {
@@ -53,4 +68,3 @@ double Material::getState() const
 {
 	return state_;
 }
-#include "pch.h"

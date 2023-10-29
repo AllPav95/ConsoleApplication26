@@ -1,11 +1,17 @@
 #include "Metal.h"
 #include "../StaticLib1/StaticLib1.cpp"
 
-Metal::Metal()
-    : MaterialBase("Metal", "Gray", 60.0, 2.7, 660.0, 62.0, 7.0) {
-}
+#include "Metal.h"
 
-Metal::Metal(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density)
+Metal::Metal(
+    const std::string& type,
+    const std::string& color,
+    double hardness,
+    double weight,
+    double meltingPoint,
+    double conductivity,
+    double density
+)
     : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density) {
 }
 
@@ -38,4 +44,3 @@ double Metal::getConductivity() const {
 double Metal::getDensity() const {
     return density_;
 }
-#include "pch.h"

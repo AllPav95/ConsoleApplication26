@@ -1,5 +1,6 @@
 #pragma once
 #include "Soldier.h"
+
 class SoldierActions :
     public Soldier
 {
@@ -7,4 +8,3 @@ class SoldierActions :
 public:
     virtual void walk() = 0;
 };
-

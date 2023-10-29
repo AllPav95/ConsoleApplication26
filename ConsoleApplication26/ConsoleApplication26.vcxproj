@@ -145,6 +145,7 @@
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialBase.h" />
     <ClInclude Include="Metal.h" />
+    <ClInclude Include="Outlander.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sabre.h" />
     <ClInclude Include="Soldier.h" />

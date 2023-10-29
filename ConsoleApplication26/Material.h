@@ -1,10 +1,20 @@
 #pragma once
+#include <string>
 #include "MaterialBase.h"
 
 class Material : public MaterialBase {
 public:
-    Material(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density, double moistureContent, double quality, double softness, double state)
-        : MaterialBase(type, color, hardness, weight, meltingPoint, conductivity, density, moistureContent, quality, softness, state) {}
+    Material(
+        const std::string& type = "Unknown",
+        const std::string& color = "Unknown",
+        double hardness = 0.0,
+        double weight = 0.0,
+        double meltingPoint = -1.0,
+        double conductivity = 0.0,
+        double density = 0.0,
+        double softness = 0.0, 
+        double state = 0.0 
+    );
 
     double getHardness() const;
     double getWeight() const;
@@ -17,7 +27,7 @@ public:
     double getState() const;
     std::string getType() const;
     std::string getColor() const;
-
+    
 private:
     std::string type_;
     std::string color_;
@@ -30,4 +40,5 @@ private:
     double quality_;
     double softness_;
     double state_;
+    
 };

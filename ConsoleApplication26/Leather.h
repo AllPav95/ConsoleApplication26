@@ -1,16 +1,19 @@
 #pragma once
 #include "MaterialBase.h"
-
-class Leather final: public MaterialBase {
-
+class Leather : public MaterialBase {
 public:
-    Leather();
-    Leather(const std::string& type, const std::string& color, double hardness, double weight, double quality, double softness, double moistureContent)
-        : MaterialBase(type, color, hardness, weight, quality, softness, moistureContent) {}
+    Leather(
+        const std::string& type = "Leather",
+        const std::string& color = "Brown",
+        double hardness = 2.0,
+        double weight = 1.0,
+        double quality = 3.0,
+        double softness = 5.0,
+        double moistureContent = 7.0
+    );
 
     std::string getType() const;
     std::string getColor() const;
-
     double getHardness() const;
     double getWeight() const;
     double getQuality() const;
