@@ -14,6 +14,10 @@ public:
     void walk() override {
         std::cout << "Soldier " << name << " is walking." << std::endl;
     }
+    void jump() override {
+        std::cout << "Soldier " << name << " is jumping." << std::endl;
+    }
+
     Soldier() = default;
 
 private:

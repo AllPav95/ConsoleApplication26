@@ -16,3 +16,6 @@ void Soldier::report() const {
 void Soldier::walk() {
     std::cout << "Soldier " << name << " is walking." << std::endl;
 }
+void Soldier::jump() {
+    std::cout << "Soldier " << name << " is jumping." << std::endl;
+}

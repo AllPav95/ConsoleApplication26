@@ -8,6 +8,7 @@
 #include "Ammunition.h"
 #include "Weapon.h"
 #include "Soldier.h"
+#include "SoldierActions.h"
 #include "Horses.h"
 #include <vector>
 #include "../StaticLib1/StaticLib1.cpp"
@@ -15,7 +16,6 @@
 #include "../StaticLib3/StaticLib3.cpp"
 #include "../StaticLib4/StaticLib4.cpp"
 #include "../StaticLib5/StaticLib5.cpp"
-#include "SoldierActions.h"
 
 int main() {
     Material steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0);
