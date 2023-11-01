@@ -22,15 +22,17 @@
 #include "../StaticLib3/StaticLib3.cpp"
 #include "../StaticLib4/StaticLib4.cpp"
 #include "../StaticLib5/StaticLib5.cpp"
+#include "../StaticLib1/StaticLib1.cpp"
 
-void fnStaticLib1(std::vector<MaterialBase*>& materials);
+
+
 
 int main() {
     Material steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0);
     Material metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0);
     Material leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0);
     Material wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100.0);
-    
+
     std::vector<MaterialBase*> materials;
     materials.push_back(&steel);
     materials.push_back(&metal);
@@ -61,12 +63,10 @@ int main() {
     soldierPtr->walk();
 
     fnStaticLib4("John", 35, "Captain", soldiers[0]);
-    fnStaticLib5("HorseName", 5, "Breed", 600.0, Horse("HorseName", 5, "Breed", 600.0));
 
-    for (MaterialBase* material : materials) {
-        delete material;
-    }
+    fnStaticLib5("HorseName", 5, "Breed", 600.0);
+
+    
 
     return 0;
 }
-#include "resource.h"

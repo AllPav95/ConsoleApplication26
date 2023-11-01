@@ -1,16 +1,14 @@
-﻿#include "pch.h"
-#include <iostream>
-#include "MaterialBase.h"
-#include "Material.h"
-#include "Steel.h"
-#include "Metal.h"
-#include "Leather.h"
-#include "Wood.h"
+﻿#pragma once 
+#include "pch.h"
 
-#include <stdio.h>
 #include <vector>
 
-void fnStaticLib1(std::vector<MaterialBase*>& materials)
+
+#include "../ConsoleApplication26/MaterialBase.h"
+
+
+
+void fnStaticLib1(const std::vector<MaterialBase*>& materials)
 {
     printf("Material information:\n");
     for (const MaterialBase* material : materials) {

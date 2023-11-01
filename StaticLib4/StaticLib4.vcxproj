@@ -145,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\ConsoleApplication26\Soldier.cpp" />
-    <ClCompile Include="..\StaticLib5\StaticLib5.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

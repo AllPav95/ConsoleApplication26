@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\StaticLib1">
-      <UniqueIdentifier>{4bca5895-6bf2-4e30-99fb-ad56633377d3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Material">
       <UniqueIdentifier>{4918c85b-e0d1-46b2-b3c5-7e2eb9491106}</UniqueIdentifier>
     </Filter>
@@ -28,48 +25,48 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\Leather.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\Material.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\MaterialBase.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\Metal.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\Steel.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
     <ClInclude Include="..\ConsoleApplication26\Wood.h">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Material.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\Leather.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\Material.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\MaterialBase.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\Metal.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\Steel.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
     </ClCompile>
     <ClCompile Include="..\ConsoleApplication26\Wood.cpp">
-      <Filter>Исходные файлы\StaticLib1</Filter>
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticLib1.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #pragma once
 #include "MaterialBase.h"
-#include "../StaticLib1/StaticLib1.cpp"
+
 
 class Metal : public MaterialBase {
 public:

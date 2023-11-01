@@ -1,7 +1,5 @@
 #include "Metal.h"
-#include "../StaticLib1/StaticLib1.cpp"
 
-#include "Metal.h"
 
 Metal::Metal(
     const std::string& type,
@@ -44,4 +42,3 @@ double Metal::getConductivity() const {
 double Metal::getDensity() const {
     return density_;
 }
-#include "resource.h"

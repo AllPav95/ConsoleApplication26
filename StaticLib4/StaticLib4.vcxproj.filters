@@ -38,8 +38,5 @@
     <ClCompile Include="..\ConsoleApplication26\Soldier.cpp">
       <Filter>Soldier</Filter>
     </ClCompile>
-    <ClCompile Include="..\StaticLib5\StaticLib5.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

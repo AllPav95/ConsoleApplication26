@@ -12,7 +12,7 @@ void fnStaticLib3(const std::vector <Ammunition>& ammunition, const std::vector<
     for (const Ammunition& ammo : ammunition) {
         printf("Ammunition Type: %s\n", ammo.getType().c_str());
         printf("Ammunition Capacity: %d\n", ammo.getCapacity());
-        printf("Ammunition Weight: %d\n", ammo.getWeight());
+        printf("Ammunition Weight: %f\n", ammo.getWeight());
     }
     printf("Weapon information: \n");
     for (const Weapon& weapon : weapons) {

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 
+
 class Horse {
 public:
     Horse(const std::string& name, int age, const std::string& breed, double weight);

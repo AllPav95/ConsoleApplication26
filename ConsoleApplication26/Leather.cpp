@@ -30,7 +30,6 @@ double Leather::getWeight() const {
     return weight_;
 }
 
-
 double Leather::getQuality() const {
     return quality_;
 }
@@ -44,4 +43,3 @@ double Leather::getMoistureContent() const
 {
     return moistureContent_;
 }
-#include "resource.h"

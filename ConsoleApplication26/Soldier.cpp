@@ -10,7 +10,6 @@ void Soldier::report() const {
     std::cout << "Soldier: " << name << std::endl;
     std::cout << "Age: " << age << " years" << std::endl;
     std::cout << "Rank: " << rank << std::endl;
-
 }
 
 void Soldier::performDuty()
@@ -24,4 +23,4 @@ void Soldier::walk() {
 void Soldier::jump() {
     std::cout << "Soldier " << name << " is jumping." << std::endl;
 }
-#include "resource.h"
+

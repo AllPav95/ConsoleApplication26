@@ -38,4 +38,3 @@ double Wood::getState() const
 {
     return state_;
 }
-#include "resource.h"
