@@ -1,13 +1,8 @@
+
 #include "MaterialBase.h"
-#include "Material.h"
-#include "Steel.h"
-#include "Metal.h"
-#include "Leather.h"
-#include "Wood.h"
 
 MaterialBase::MaterialBase(const std::string& type, const std::string& color, double hardness, double weight, double meltingPoint, double conductivity, double density, double softness, double state)
-{
-}
+    : type_(type), color_(color), hardness_(hardness), weight_(weight), meltingPoint_(meltingPoint), conductivity_(conductivity), density_(density), moistureContent_(0), quality_(0), softness_(softness), state_(state) {}
 
 std::string MaterialBase::getType() const {
     return type_;

@@ -45,7 +45,10 @@
     <ClCompile Include="Ammunition.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SoldierActions.cpp">
+    <ClCompile Include="ISoldier.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="ISoldierActions.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,16 +80,19 @@
     <ClInclude Include="resource.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Sabre.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Ammunition.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="SoldierActions.h">
+    <ClInclude Include="Outlander.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Outlander.h">
+    <ClInclude Include="ISoldier.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ISoldierActions.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StaticLib1\StaticLib1.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

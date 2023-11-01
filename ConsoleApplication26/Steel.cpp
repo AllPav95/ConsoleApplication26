@@ -41,3 +41,4 @@ double Steel::getDensity() const
 {
     return density_;
 }
+#include "resource.h"

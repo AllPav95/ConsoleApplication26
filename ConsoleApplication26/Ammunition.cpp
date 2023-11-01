@@ -14,3 +14,4 @@ int Ammunition::getCapacity() const {
 double Ammunition::getWeight() const {
     return weight_;
 }
+#include "resource.h"

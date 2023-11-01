@@ -1,15 +1,14 @@
-﻿#include <iostream>
+﻿#include "pch.h"
+#include <iostream>
 #include "MaterialBase.h"
 #include "Material.h"
 #include "Steel.h"
 #include "Metal.h"
 #include "Leather.h"
 #include "Wood.h"
-#include <stdio.h>
-#include "pch.h"
-#include "framework.h"
-#include <vector>
 
+#include <stdio.h>
+#include <vector>
 
 void fnStaticLib1(std::vector<MaterialBase*>& materials)
 {

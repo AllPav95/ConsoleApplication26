@@ -128,28 +128,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ammunition.cpp" />
+    <ClCompile Include="ISoldier.cpp" />
+    <ClCompile Include="ISoldierActions.cpp" />
     <ClCompile Include="Outlander.cpp" />
     <ClCompile Include="Leather.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="MaterialBase.cpp" />
     <ClCompile Include="Metal.cpp" />
     <ClCompile Include="Soldier.cpp" />
-    <ClCompile Include="SoldierActions.cpp" />
     <ClCompile Include="Steel.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Wood.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\StaticLib1\StaticLib1.h" />
     <ClInclude Include="Ammunition.h" />
+    <ClInclude Include="ISoldier.h" />
+    <ClInclude Include="ISoldierActions.h" />
     <ClInclude Include="Leather.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialBase.h" />
     <ClInclude Include="Metal.h" />
     <ClInclude Include="Outlander.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Sabre.h" />
     <ClInclude Include="Soldier.h" />
-    <ClInclude Include="SoldierActions.h" />
     <ClInclude Include="Steel.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Wood.h" />

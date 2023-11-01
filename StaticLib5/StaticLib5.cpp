@@ -1,6 +1,7 @@
-﻿#include <cstdio>
-#include "pch.h"
-#include "framework.h"
+﻿#include "pch.h"
+#include <iostream>
+
+#include <cstdio>
 #include "../ConsoleApplication26/Horses.h"
 
 

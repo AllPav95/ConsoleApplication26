@@ -44,3 +44,4 @@ double Leather::getMoistureContent() const
 {
     return moistureContent_;
 }
+#include "resource.h"

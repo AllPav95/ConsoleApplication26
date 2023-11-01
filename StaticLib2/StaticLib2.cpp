@@ -1,7 +1,9 @@
-﻿#include <stdio.h>
+﻿#include "pch.h"
+#include <iostream>
+
+#include <stdio.h>
 #include <vector>
-#include "pch.h"
-#include "framework.h"
+
 #include "../ConsoleApplication26/Weapon.h"
 
 void fnStaticLib2(const std::vector<Weapon>& weapons)

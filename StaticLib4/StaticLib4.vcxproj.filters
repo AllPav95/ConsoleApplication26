@@ -27,9 +27,6 @@
     <ClInclude Include="..\ConsoleApplication26\Soldier.h">
       <Filter>Soldier</Filter>
     </ClInclude>
-    <ClInclude Include="SoldierActions.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StaticLib4.cpp">
@@ -41,7 +38,7 @@
     <ClCompile Include="..\ConsoleApplication26\Soldier.cpp">
       <Filter>Soldier</Filter>
     </ClCompile>
-    <ClCompile Include="SoldierActions .cpp">
+    <ClCompile Include="..\StaticLib5\StaticLib5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

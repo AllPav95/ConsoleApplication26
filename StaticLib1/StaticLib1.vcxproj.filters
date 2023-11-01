@@ -16,6 +16,9 @@
     <Filter Include="Исходные файлы\StaticLib1">
       <UniqueIdentifier>{4bca5895-6bf2-4e30-99fb-ad56633377d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{4918c85b-e0d1-46b2-b3c5-7e2eb9491106}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">

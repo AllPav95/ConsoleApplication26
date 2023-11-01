@@ -1,6 +1,6 @@
-﻿#include <cstdio>
-#include "pch.h"
-#include "framework.h"
+﻿#include "pch.h"
+
+#include <cstdio>
 #include "../ConsoleApplication26/Soldier.h"
 
 

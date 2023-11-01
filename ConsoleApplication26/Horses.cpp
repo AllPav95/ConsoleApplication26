@@ -18,3 +18,4 @@ std::string Horse::getBreed() const {
 double Horse::getWeight() const {
     return weight_;
 }
+#include "resource.h"

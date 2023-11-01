@@ -1,4 +1,4 @@
-#include "Metal.h"
+#include "Material.h"
 
 Material::Material(
 	const std::string& type,
@@ -24,7 +24,6 @@ std::string Material::getColor() const
 {
 	return color_;
 }
-
 
 double Material::getHardness() const
 {

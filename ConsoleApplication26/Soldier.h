@@ -1,22 +1,17 @@
 #pragma once
-#include <iostream>
 #include <string>
-#include "Weapon.h"
-#include "SoldierActions.h"
+#include "ISoldier.h"
+#include "ISoldierActions.h"
 
-class Soldier : public SoldierActions {
+class Soldier : public ISoldier, public ISoldierActions {
 public:
-    Soldier(const std::string& n, int a, const std::string& r, const Weapon& weapon)
-        : name(n), age(a), rank(r), weapon_(weapon) {}
-
+    Soldier(const std::string& n, int a, const std::string& r);
+   
     void report() const;
-
-    void walk() override {
-        std::cout << "Soldier " << name << " is walking." << std::endl;
-    }
-    void jump() override {
-        std::cout << "Soldier " << name << " is jumping." << std::endl;
-    }
+    void performDuty() override;
+    void walk() override;
+    void jump() override;
+    
 
     Soldier() = default;
 
@@ -24,5 +19,5 @@ private:
     std::string name;
     int age;
     std::string rank;
-    Weapon weapon_;
+   
  };   

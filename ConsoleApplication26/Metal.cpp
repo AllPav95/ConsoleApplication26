@@ -44,3 +44,4 @@ double Metal::getConductivity() const {
 double Metal::getDensity() const {
     return density_;
 }
+#include "resource.h"

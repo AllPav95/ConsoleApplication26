@@ -39,6 +39,5 @@ private:
     double moistureContent_;
     double quality_;
     double softness_;
-    double state_;
-    
+    double state_;   
 };
