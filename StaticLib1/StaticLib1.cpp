@@ -12,16 +12,16 @@ void fnStaticLib1(const std::vector<MaterialBase*>& materials)
 {
     printf("Material information:\n");
     for (const MaterialBase* material : materials) {
-        printf("Material Type: %s\n", material->getType().c_str());
-        printf("Material Color: %s\n", material->getColor().c_str());
-        printf("Material Hardness: %f\n", material->getHardness());
-        printf("Material Weight: %f\n", material->getWeight());
-        printf("Material MeltingPoint: %f\n", material->getMeltingPoint());
-        printf("Material Conductivity: %f\n", material->getConductivity());
-        printf("Material Density: %f\n", material->getDensity());
-        printf("Material MoistureContent: %f\n", material->getMoistureContent());
-        printf("Material Quality: %f\n", material->getQuality());
-        printf("Material Softness: %f\n", material->getSoftness());
-        printf("Material State: %f\n", material->getState());
+        printf("Material Type: %.2s\n", material->getType().c_str());
+        printf("Material Color: %.2s\n", material->getColor().c_str());
+        printf("Material Hardness: %.2f\n", material->getHardness());
+        printf("Material Weight: %.2f\n", material->getWeight());
+        printf("Material MeltingPoint: %.2f\n", material->getMeltingPoint());
+        printf("Material Conductivity: %.2f\n", material->getConductivity());
+        printf("Material Density: %.2f\n", material->getDensity());
+        printf("Material MoistureContent: %.2f\n", material->getMoistureContent());
+        printf("Material Quality: %.2f\n", material->getQuality());
+        printf("Material Softness: %.2f\n", material->getSoftness());
+        printf("Material State: %.2f\n", material->getState());
     }
 }

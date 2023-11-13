@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <iomanip>
 
 #include "MaterialBase.h"
 #include "Material.h"
@@ -24,49 +25,45 @@
 #include "../StaticLib5/StaticLib5.cpp"
 #include "../StaticLib1/StaticLib1.cpp"
 
-
-
-
 int main() {
     Material steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0);
     Material metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0);
     Material leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0);
     Material wood("Wood", "Brown", 1.0, 0.6, 0.7, 10.0, 100.0);
-
+    
     std::vector<MaterialBase*> materials;
     materials.push_back(&steel);
     materials.push_back(&metal);
     materials.push_back(&leather);
     materials.push_back(&wood);
-   
+    
     fnStaticLib1(materials);
     
+    
     std::vector<Weapon> weapons;
-    weapons.push_back(Weapon("AK-47", 30, 4.5));
-    weapons.push_back(Weapon("M16", 20, 4.0));
-
+    weapons.push_back(Weapon("Musket", 1, 10.0));
+    weapons.push_back(Weapon("Flintlock Pistol", 1, 2.0));
+    std::cout << std::fixed << std::setprecision(2);
     fnStaticLib2(weapons);
-
+    
     std::vector<Ammunition> ammunition;
     
     fnStaticLib3(ammunition, weapons);
-
+    
     std::vector<Soldier> soldiers;
-    soldiers.push_back(Soldier("Johnson", 25, "Private"));
-    soldiers.push_back(Soldier("Smith", 30, "Sergeant"));
+    soldiers.push_back(Soldier("Johnson", 25, "Corporal"));
+    soldiers.push_back(Soldier("Smith", 30, "Major"));
     for (const Soldier& soldier : soldiers) {
         soldier.report();
     }
-    Soldier soldier("John", 35, "Captain");
+    Soldier soldier("John", 35, "Colonel");
 
     ISoldierActions* soldierPtr = &soldier;
     soldierPtr->walk();
 
-    fnStaticLib4("John", 35, "Captain", soldiers[0]);
+    fnStaticLib4("John", 35, "Colonel", soldiers[0]);
 
     fnStaticLib5("HorseName", 5, "Breed", 600.0);
-
-    
 
     return 0;
 }
