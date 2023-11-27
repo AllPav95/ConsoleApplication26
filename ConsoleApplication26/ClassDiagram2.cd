@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ammunition" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAgAIAIAAAAEBQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ammunition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Horse" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAEAAAAAAAAgAAAAAAAYABAAgIAAAAAIEAGAAIAA=</HashCode>
+      <FileName>Horses.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISoldier" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>ISoldier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISoldierActions" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ISoldierActions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Leather" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAASAAAAgAAAAABABABQAAAICAAAIAoBAAAAA=</HashCode>
+      <FileName>Leather.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Material" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAgAEAASAAgAgAAAAABABABQAAAMCEAAMAojAAAAA=</HashCode>
+      <FileName>Material.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaterialBase" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAEAASCAiAgEAAAABABABRAAAMCEAAMAojAAAAA=</HashCode>
+      <FileName>MaterialBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Metal" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAgAgAAAAAAAAABQgAAMCAAAMAgiAAAAA=</HashCode>
+      <FileName>Metal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Soldier" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAQAAQAAAAAQAAAAACkAEBAAAACBgIGACABA=</HashCode>
+      <FileName>Soldier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Steel" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAgAgAAAAAAAAABQAAAMCAEAMAgiAAAAA=</HashCode>
+      <FileName>Steel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAAgAAAAAAAAABQAAQAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wood" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAACAAAAAAAAAABAAABQAAAICEAAMAogAAAAA=</HashCode>
+      <FileName>Wood.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
