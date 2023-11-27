@@ -7,7 +7,7 @@
 #include "../ConsoleApplication26/Weapon.h"
 
 
-void fnStaticLib3(const std::vector <Ammunition>& ammunition, const std::vector<Weapon> weapons) { 
+void fnStaticLib3(const std::vector <Ammunition>& ammunition, const std::vector<Weapon>& weapons) {
     printf("Ammunition information: \n");
     for (const Ammunition& ammo : ammunition) {
         printf("Ammunition Type: %s\n", ammo.getType().c_str());

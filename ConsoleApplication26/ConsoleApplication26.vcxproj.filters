@@ -51,6 +51,9 @@
     <ClCompile Include="ISoldierActions.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Horses.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MaterialBase.h">
@@ -93,6 +96,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="..\StaticLib1\StaticLib1.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Horses.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
