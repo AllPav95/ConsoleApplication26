@@ -23,7 +23,7 @@
 #include "Outlander.h"
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 400), "SFML Example");
+    sf::RenderWindow window(sf::VideoMode(1500, 1000), "SFML Example");
     Material steel("Steel", "Gray", 200.0, 7.8, 1510.0, 45.0, 10.0);
     Material metal("Metal", "Silver", 60.0, 2.7, 660.0, 62.0, 7.0);
     Material leather("Leather", "Brown", 2.0, 1.0, 3.0, 5.0, 7.0);
@@ -86,12 +86,12 @@ int main() {
         
     sf::Clock clock;
 
-    float frameTime = 0.05f; // время в секундах между кадрами
+    float frameTime = 0.25f; // время в секундах между кадрами
 
     int frame = 0;  
     int frameWidth = 100;  
     int frameHeight = 100;  
-    int numberOfFrames = 20; //фактическое количество кадров в анимации 
+    int numberOfFrames = 25; //фактическое количество кадров в анимации 
     
     sf::Texture texture;
     if (!texture.loadFromFile("C:/Users/АллаПК/source/repos/ConsoleApplication26/ConsoleApplication26/1.png")) {
